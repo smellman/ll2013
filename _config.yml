@@ -9,8 +9,8 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
-tagline: Site Tagline
+title : LL祭り
+tagline: カテゴリ
 author :
   name : Name Lastname
   email : blah@email.test
@@ -126,3 +126,8 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
+jekyll_sort:
+  - src: pages
+    direction: up
+    by: sort
+    dest: pages_sorted

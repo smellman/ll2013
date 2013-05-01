@@ -22,7 +22,7 @@
         <h1 class="header"><a href="{{ HOME_PATH }}">{{ site.title }}</a></h1>
         <p class="header">{{ site.tagline }}</p>
         <ul>
-          {% assign pages_list = site.pages %}
+          {% assign pages_list = site.pages_sorted %}
           {% assign group = 'navigation' %}
           {% include JB/pages_list %}
         </ul>
