@@ -4,22 +4,41 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="author" content="{{ site.author.name }}" />
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} - {{ site.title }}</title>
 
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/styles.css">
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/pygment_trac.css">
-    <script src="{{ ASSET_PATH }}/js/scale.fix.js"></script>
+    <link rel="stylesheet" href="{{site.baseurl}}{{ ASSET_PATH }}/css/styles.css">
+    <link rel="stylesheet" href="{{site.baseurl}}{{ ASSET_PATH }}/css/pygment_trac.css">
+    <script src="{{site.baseurl}}{{ ASSET_PATH }}/js/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     {% include JB/analytics %}
+    <style>
+      .logo {
+        padding-bottom: 0px;
+      }
+      .logo img {
+        display: block;
+        margin: 0 auto 0 auto;
+        padding: 0;
+        border: none;
+      }
+      h1.header img {
+        margin: 0;
+        padding: 0;
+        border: none;      
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
+      <div class="logo">
+	<img src="{{site.baseurl}}/images/main_logo.jpg" />
+      </div>
       <header>
-        <h1 class="header"><a href="{{ HOME_PATH }}">{{ site.title }}</a></h1>
+        <h1 class="header"><a href="{{ site.baseurl }}{{HOME_PATH}}"><img src="{{site.baseurl}}/images/logo_only.jpg" alt="{{ site.title }}"/></a></h1>
         <p class="header">{{ site.tagline }}</p>
         <ul>
           {% assign pages_list = site.pages_sorted %}
@@ -40,7 +59,6 @@
         {% endif %}
         {% if site.author %}
         <div class="misc vcard">
-          <h4>about</h4>
           <ul>
             {% if site.author.email %}
             <li class="contact"><address><span class="author fn n">{{ site.author.name }}</span> - <span class="fn email">{{ site.author.email }}</span></address></li>
@@ -72,8 +90,9 @@
       {{ content }}
       </section>
 
+
       <footer>
-      <p><small>Hosted on <a href="http://pages.github.com/">GitHub Pages</a> using the <a href="https://github.com/sodabrew/theme-dinky">Dinky theme</a> for <a href="http://jekyllbootstrap.com/">Jekyll Bootstrap</a></small></p>
+      <p>Using the <a href="https://github.com/sodabrew/theme-dinky">Dinky theme</a> for <a href="http://jekyllbootstrap.com/">Jekyll Bootstrap</a>. Customized by <a href="http://twitter.com/smellman/">@smellman</a></p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->

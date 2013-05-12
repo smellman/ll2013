@@ -208,7 +208,7 @@ header {
 	color: #FDFDFB;
   width:170px;
   float:left;
-  position:fixed;
+  /* position:fixed;*/
 	border: 1px solid #000;
 	-webkit-border-top-right-radius: 4px;
 	-webkit-border-bottom-right-radius: 4px;
@@ -219,6 +219,7 @@ header {
 	padding: 34px 25px 22px 50px;
 	margin: 30px 25px 0 0;
 	-webkit-font-smoothing: antialiased;
+  margin-bottom: 10px;
 }
 
 p.header {
@@ -310,18 +311,16 @@ a.buttons:hover {
 section {
   width:650px;
   float:right;
-  padding-bottom:50px;
+  /* padding-bottom:50px;*/
 }
 
 
 /* Footer */
 
 footer {
-  width:170px;
-  float:left;
-  position:fixed;
-  bottom:10px;
-	padding-left: 50px;
+  clear: both;
+  padding: 10px 10px 0;
+  border-top: 1px solid #D6D6D6;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -400,7 +399,9 @@ footer {
 	footer a{
 		display:block;
 	}
-
+  img {
+      max-width: 400px;
+  }
 }
 
 @media print {
