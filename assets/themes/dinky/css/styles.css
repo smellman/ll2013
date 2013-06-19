@@ -305,6 +305,11 @@ a.buttons:hover {
 	text-decoration: none;
 }
 
+/* notice */
+.notice {
+    font-style: italic;
+    text-decoration: underline;
+}
 
 /* Section - for main page content */
 
