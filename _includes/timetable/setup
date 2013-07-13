@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="{{site.baseurl}}/timetable.css">
+<script src="{{site.baseurl}}/jquery-2.0.3.min.js"></script>
+<script src="{{site.baseurl}}/jquery.timetable.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#timetable').timetable({
+      'firstHour': 10,
+      'lastHour': 21,
+      'file': "{{site.baseurl}}/ll-timetable.json"
+    });
+  });
+</script>

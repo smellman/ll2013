@@ -1,0 +1,102 @@
+
+label {
+    margin: 3px;
+    width: 216px;
+    display: inline-block;
+    font-size: .7em;
+    padding: 2px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.day {
+    border: 2px solid grey;
+    margin: 15px 0;
+    padding: 5px 0 0 0;
+    background-position: 1px 0px;
+}
+
+.day legend {
+    margin: 0 5px;
+    padding: 0 5px;
+    background: white;
+}
+
+.stage {
+    position: relative;
+    border-top: 1px dotted lightgrey;
+    border-bottom: 1px dotted lightgrey;
+    margin: 5px 1px;
+    padding: 5px;
+}
+
+.stage.blue {
+    background: rgba(0, 0, 255, 0.1);
+}
+
+.stage.green {
+    background: rgba(0, 128, 0, 0.1);
+}
+
+.stage.red {
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.stage.white {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.times {
+    position: relative;
+}
+
+.time {
+    margin-top: -10px;
+    padding-left: 2px;
+    position: absolute;
+    font-size: .6em;
+    color: lightgrey;
+}
+
+.artist {
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: absolute;
+    top: 2px;
+    border: 1px solid;
+    padding: 5px;
+    font-family: sans-serif;
+    font-size: .6em;
+    background: white;
+}
+
+.artist:hover {
+    color: black;
+    overflow: visible;
+    z-index: 99;
+    white-space: normal;
+    word-break: break-word;
+}
+
+div::selection {
+    background: transparent;
+}
+div::-moz-selection {
+    background: transparent;
+}
+
+.artist.selected {
+    background: lightgreen;
+    color: black;
+}
+
+@media print {
+    .selections {
+        display: none;
+    }
+}

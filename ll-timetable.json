@@ -1,0 +1,42 @@
+{
+    "name": "LLまつり",
+    "days": [
+	{
+	    "name": "LLまつり",
+	    "date": "24.08.2013",
+	    "stages": [
+		{
+		    "id": "discussion_track",
+		    "name": "A会場",
+		    "artists" : [
+			{
+			    "id": "opening",
+			    "name": "開場",
+			    "time": "11:00",
+			    "duration": 30
+			},
+			{
+			    "id": "beyond_js",
+			    "name": "Beyond JS",
+			    "time": "11:30",
+			    "duration": 90
+			}
+		    ]
+		},
+		{
+		    "id": "presen_track",
+		    "name": "B会場",
+		    "artists" : [
+			{
+			    "id": "application_environment_with_javascript_engine",
+			    "name": "1",
+			    "detail": "Javascriptエンジンによるアプリの動的実行環境を作っている話",
+			    "time": "11:30",
+			    "duration": 20
+			}
+		    ]
+		}
+	    ]
+	}
+    ]
+}
