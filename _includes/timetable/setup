@@ -10,3 +10,6 @@
     });
   });
 </script>
+<div id="table_popup">
+  <span id="table_popup_detail">detail</span>
+</div>

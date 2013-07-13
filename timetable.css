@@ -32,15 +32,15 @@ input[type="checkbox"] {
     padding: 5px;
 }
 
-.stage.blue {
+.stage.s_discussion_track {
     background: rgba(0, 0, 255, 0.1);
 }
 
-.stage.green {
+.stage.s_presen_track {
     background: rgba(0, 128, 0, 0.1);
 }
 
-.stage.red {
+.stage.s_tutorial_track {
     background: rgba(255, 0, 0, 0.1);
 }
 
@@ -50,14 +50,16 @@ input[type="checkbox"] {
 
 .times {
     position: relative;
+    height: 12px;
 }
 
 .time {
-    margin-top: -10px;
+    margin-top: -5px;
     padding-left: 2px;
     position: absolute;
     font-size: .6em;
     color: lightgrey;
+    height: 10px;
 }
 
 .artist {
@@ -73,6 +75,7 @@ input[type="checkbox"] {
     font-family: sans-serif;
     font-size: .6em;
     background: white;
+    height: 18px;
 }
 
 .artist:hover {
@@ -94,6 +97,19 @@ div::-moz-selection {
     background: lightgreen;
     color: black;
 }
+
+/* HOVER STYLES */
+div#table_popup {
+  display: none;
+  position: absolute;
+  width: 280px;
+  padding: 10px;
+  background: #eeeeee;
+  color: #000000;
+  border: 1px solid #1a1a1a;
+  font-size: 90%;
+}
+
 
 @media print {
     .selections {

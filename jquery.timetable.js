@@ -197,15 +197,25 @@
         },
 
         createArtist: function (el, options, artist) {
+	    var moveLeft = 20;
+	    var moveDown = 10;
             var offset = _calcOffset(artist.time, options);
             var width = _calcWidth(artist.duration, options);
+	    var link_to = $('<a/>').attr('href', '#' + artist.link).text(artist.name);
 
-            var $div = $('<div/>').addClass('artist').attr('id', artist.id).append(artist.name).css({
+            var $div = $('<div/>').addClass('artist').attr('id', artist.id).append(link_to).css({
                 'width': width + '%',
                 'left': offset + '%'
             }).click(function(e) {
-                _toggleArtist(artist.id);
-            });
+                //_toggleArtist(artist.id);
+            }).hover(function(e) {
+		$('span#table_popup_detail').text(artist.detail);
+		$('div#table_popup').show().css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft).appendTo('body');
+	    }, function() {
+		$('div#table_popup').hide();
+	    }).mousemove(function(e) {
+		$('div#table_popup').css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+	    });
             if (_selectedArtists.indexOf(artist.id) > -1) {
                 $div.addClass('selected');
             }

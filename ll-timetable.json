@@ -6,33 +6,68 @@
 	    "date": "24.08.2013",
 	    "stages": [
 		{
-		    "id": "discussion_track",
+		    "id": "s_discussion_track",
 		    "name": "A会場",
 		    "artists" : [
 			{
-			    "id": "opening",
+			    "id": "a_opening",
+			    "link": "opening",
 			    "name": "開場",
+			    "detail": "開場",
 			    "time": "11:00",
 			    "duration": 30
 			},
 			{
-			    "id": "beyond_js",
+			    "id": "a_beyond_js",
+			    "link": "beyond_js",
 			    "name": "Beyond JS",
+			    "detail": "Beyond JS ～ JavaScriptの改良に未来はあるか？",
 			    "time": "11:30",
 			    "duration": 90
+			},
+			{
+			    "id": "a_lightling_talk",
+			    "link": "lightning_talk",
+			    "name": "LT",
+			    "detail": "ライトニングトーク(A開場,B開場共通)",
+			    "time": "19:00",
+			    "duration": 60
 			}
 		    ]
 		},
 		{
-		    "id": "presen_track",
+		    "id": "s_presen_track",
 		    "name": "B会場",
 		    "artists" : [
 			{
-			    "id": "application_environment_with_javascript_engine",
-			    "name": "1",
+			    "id": "b_application_environment_with_javascript_engine",
+			    "link": "application_environment_with_javascript_engine",
+			    "name": "JS",
 			    "detail": "Javascriptエンジンによるアプリの動的実行環境を作っている話",
 			    "time": "11:30",
 			    "duration": 20
+			},
+			{
+			    "id": "b_lightling_talk",
+			    "link": "lightning_talk",
+			    "name": "LT",
+			    "detail": "ライトニングトーク(A開場,B開場共通)",
+			    "time": "19:00",
+			    "duration": 60
+			}
+		    ]
+		},
+		{
+		    "id": "s_tutorial_track",
+		    "name": "C開場",
+		    "artists" : [
+			{
+			    "id": "a_shell",
+			    "link": "shell",
+			    "name": "シェル芸",
+			    "detail": "第6回チャンピオンシップシェル芸ランナー勉強会 in LLまつり",
+			    "time": "11:30",
+			    "duration": 90
 			}
 		    ]
 		}
