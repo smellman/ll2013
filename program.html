@@ -16,6 +16,8 @@ sort: 2
   <li>
     <a href="#discussion_track">ディスカッショントラック(A会場)</a>
     <ul style="margin: 0;">
+      <li><a href="#language_risk">顕在化する？○○言語のリスクとは？</a></li>
+      <li><a href="#realworld_programming_ll">とびだせ! LL 〜リアル世界をプログラミングする〜</a></li>
       <li><a href="#beyond_js">Beyond JS ～ JavaScriptの改良に未来はあるか？</a></li>
     </ul>
   </li>
@@ -24,6 +26,10 @@ sort: 2
     <ul style="margin: 0;">
       <li><a href="#application_environment_with_javascript_engine">Javascriptエンジンによるアプリの動的実行環境を作っている話</a></li>
       <li><a href="#lightweight_language_go">Lightweigt Language &quot;Go&quot;</a></li>
+      <li><a href="#accelerator_control_with_ll">加速器制御システムでのLL言語の利用について(仮)</a></li>
+      <li><a href="#ll_on_astronomy">天文学におけるLL利用の過去と現在</a></li>
+      <li><a href="#future_prediction_about_internet_from_change_of_application_layer_protocol">アプリケーション層プロトコルの変化からみるInternetの未来予測(仮)</a></li>
+      <li><a href="#development_web_service_with_modern_technology">HTML5とか今風の技術を使ってWebサービスを作る 〜 wri.peの作り方</a></li>
     </ul>
   </li>
   <li>
@@ -43,6 +49,51 @@ sort: 2
 <div id="timetable"></div>
 
 <h2 id="discussion_track">ディスカッショントラック(A会場)</h2>
+
+<h3 id="language_risk">顕在化する？○○言語のリスクとは？</h3>
+
+<p>
+  今年<a href="http://anond.hatelabo.jp/20130228002211">ついに顕在化しはじめた「Perlリスク」</a>という文章が大きな話題を呼んだが、はたして言語リスクなどは存在するのか？<br />
+  過去に一世を風靡した言語やそうでない言語も、未来に生き続けられることはできないのか？<br />
+  今実務で使われている言語はこのまま実務で使い続けることができるのか？<br />
+  今回はそんな思いをテーマに、最近少し話題は減っても開発が続けられていくプログラミング言語に焦点をあてたセッションを行います。
+</p>
+
+<h4>出演者</h4>
+<dl>
+  <dt>Delphi</dt>
+  <dd>細川　淳 (（株）シリアルゲームズ / エンバカデロ MVP) <a href="https://twitter.com/pik">@pik</a></dd>
+  <dt>Common Lisp</dt>
+  <dd>Ransui Iso (株式会社X-Listing 技術戦略グループ・ディレクター) <a href="https://twitter.com/ransui">@ransui</a></dd>
+  <dt>他調整中...</dt>
+  <dt>司会・進行</dt>
+  <dd>松澤太郎 (日本UNIXユーザ会) <a href="https://twitter.com/smellman">@smellman</a></dd>
+</dl>
+
+<h4>時間</h4>
+<p>調整中</p>
+
+<h3 id="realworld_programming_ll">とびだせ! LL 〜リアル世界をプログラミングする〜</h3>
+
+<p>
+  プログラマが想像した通りのモノがつくれるようになってきた。<br />
+  「フィジカル」と「バーチャル」が互いに行き来できるようになってきている。<br />
+  本セッションでは、この新しいモノ作りの潮流を紹介する。
+</p>
+
+<h4>出演者</h4>
+
+<dl>
+  <dt>登壇者</dt>
+  <dd>田所淳(yoppa.org) CityCompiler + openFrameworks</dd>
+  <dd>高須正和(チームラボ) ニコニコ学会</dd>
+  <dt>司会</dt>
+  <dd>郷田まり子 (鳥人間)</dd>
+  <dd>佐藤智昭 (Tokyo.pm / 日本UNIXユーザ会)</dd>
+</dl>
+
+<h4>時間</h4>
+<p>調整中</p>
 
 <h3 id="beyond_js">Beyond JS ～ JavaScriptの改良に未来はあるか？</h3>
 
@@ -108,7 +159,59 @@ sort: 2
 <p>
   山口能迪 (<a href="https://twitter.com/ymotongpoo">@ymotongpoo</a>)
 </p>
-  
+
+<h3 id="accelerator_control_with_ll">加速器制御システムでのLL言語の利用について(仮)</h3>
+
+<div class="brief">
+  <p>
+    加速器制御システムのいろいろな局面で種々のLL言語が利用されています。これらのLL言語の利用について、実例を交えながらご紹介します。
+  </p>
+</div>
+
+<h4>発表者</h4>
+<p>
+  山本昇 (KEK 加速器研究施設)
+</p>
+
+<h3 id="ll_on_astronomy">天文学におけるLL利用の過去と現在</h3>
+
+<div class="brief">
+  <p>
+    天文学においては、古くから対話型シェル兼スクリプト言語環境として、IDL(Interactive Data Language)やIRAF(Image Reduction and Analysis Facility)などの、Cやアセンブラ言語などで記述された外部モジュールも呼び出すことが可能な環境が利用されており、最近ではシェル部分をPythonと統合したPyRAFなども活用されてきています。観測機器本体についてはVAXやSolarisなどのシステムとして構築されていましたが、その後、LinuxやPythonなどの流行により、検出器から望遠鏡全体の制御など、データ解析以外の様々な領域についてもLLの利用が拡大してきています。本講演では、天文学においてどのようにLLが利用されてきておりどう発展してきたかについて、実例を交えて紹介します。
+  </p>
+</div>
+
+<h4>発表者</h4>
+<p>
+  下農淳司 <a href="https://twitter.com/himorin">@himorin</a> (東京大学カブリ数物連携宇宙研究機構 Kavli IPMU)
+</p>
+
+<h3 id="future_prediction_about_internet_from_change_of_application_layer_protocol">アプリケーション層プロトコルの変化からみるInternetの未来予測(仮)</h3>
+
+<div class="brief">
+  <p>
+    プログラマ・エンジニアの視点に立って、いわゆるアプリケーション層のプロトコル策定への要求から見えるWebやInternetの各レイヤやその構造の変化について、標準化活動を通しておぼろげながら感じていることをご紹介します
+  </p>
+</div>
+
+<h4>発表者</h4>
+<p>
+  林達也 <a href="https://twitter.com/lef">@lef</a> (株式会社レピダム / OpenID Foundation Japan Producer / ISOC Japan Chapter Program Commitee Member)
+</p>
+
+<h3 id="development_web_service_with_modern_technology">HTML5とか今風の技術を使ってWebサービスを作る 〜 wri.peの作り方</h3>
+
+<div class="brief">
+  <p>
+    息抜きとしてGWに一人で作ったメモ帳サービスwri.peを、どうやって作っていったかを技術を中心に詳しく解説します。HTML5を使った高速化やSeleniumやhead-lessブラウザを使った自動テスト、最新版のRails 4.0とRuby 2.0と趣味全開で今風の技術を採用しています。デスクトップ、スマートフォン、タブレットを一枚のHTMLで実現する方法や、プログラマが一人でデザインをする方法も解説します。
+  </p>
+</div>
+
+<h4>発表者</h4>
+<p>
+  増井雄一郎 <a href="https://twitter.com/masuidrive">@masuidrive</a> FrogApps, Inc.
+</p>
+
 
 <h2 id="tutorial_track">チュートリアルトラック(C会場)</h2>
 
@@ -154,4 +257,6 @@ sort: 2
   <dd>軽量のススメ</dd>
   <dt>Masayuki Yashiro</dt>
   <dd>Pythonで機械制御</dd>
+  <dt>安藤祐介 (<a href="https://twitter.com/yando">@yando</a>)</dt>
+  <dd>PHP Matsuriの光と闇</dd>
 </dl>
