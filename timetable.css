@@ -86,10 +86,10 @@ input[type="checkbox"] {
     word-break: break-word;
 }
 
-div::selection {
+div:selection {
     background: transparent;
 }
-div::-moz-selection {
+div:-moz-selection {
     background: transparent;
 }
 

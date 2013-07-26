@@ -4,7 +4,7 @@
 <script type="text/javascript">
   $(document).ready(function () {
     $('#timetable').timetable({
-      'firstHour': 10,
+      'firstHour': 9,
       'lastHour': 21,
       'file': "{{site.baseurl}}/ll-timetable.json"
     });
